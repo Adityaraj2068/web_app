@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>this article has {{ word_count}} words</h1>
+<br>
+  {{ article }}
+<br>
+
+{%for word,num in dict_words %}
+    <h1> {{word }}:{{ num}}</h1>
+
+
+
+
+{% endfor %}
+
+<br>
+</body>
+</html>
